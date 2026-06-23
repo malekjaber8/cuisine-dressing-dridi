@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cuisine Dressing Dridi — Meubles sur mesure</title>
+<meta name="description" content="Atelier de fabrication de meubles sur mesure : cuisines, dressings, chambres, salles à manger et salons. Savoir-faire artisanal et finitions soignées.">
+<link rel="icon" type="image/jpeg" href="images/logo%20.jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header" id="header">
+  <div class="container header-inner">
+    <a href="#accueil" class="logo">
+      <img src="images/logo%20.jpeg" alt="Cuisine Dressing Dridi" class="logo-img">
+      <span class="logo-text">Cuisine Dressing <strong>Dridi</strong></span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#creations">Nos créations</a></li>
+        <li><a href="#atelier">À propos</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <form class="header-search" id="searchForm" role="search">
+      <div class="search-form">
+        <input type="text" id="searchInput" class="search-input" placeholder="Rechercher..." autocomplete="off" aria-label="Rechercher une catégorie">
+        <button type="submit" class="search-btn" aria-label="Rechercher">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+      </div>
+      <div class="search-results" id="searchResults"></div>
+    </form>
+
+    <a href="#contact" class="btn btn-primary btn-nav">Demander un devis</a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" id="accueil">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <div class="hero-text-col">
+        <p class="eyebrow reveal">Menuiserie d'agencement &amp; ameublement sur mesure</p>
+        <h1 class="reveal">Des meubles pensés<br>pour votre intérieur</h1>
+        <p class="hero-text reveal">
+          L'atelier <strong>Cuisine Dressing Dridi</strong> conçoit et fabrique des cuisines,
+          dressings, chambres, salles à manger, salons et meubles TV sur mesure, alliant
+          savoir-faire artisanal, matériaux de qualité et finitions soignées.
+        </p>
+        <div class="hero-actions reveal">
+          <a href="#creations" class="btn btn-primary">Voir nos réalisations</a>
+          <a href="#contact" class="btn btn-outline">Demander un devis</a>
+        </div>
+      </div>
+      <div class="hero-logo-col reveal">
+        <div class="hero-logo-badge">
+          <img src="images/logo%20.jpeg" alt="Cuisine Dressing Dridi">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="creations">
+    <div class="container">
+      <p class="section-eyebrow reveal">Nos créations</p>
+      <h2 class="section-title reveal">Six univers, un savoir-faire d'exception</h2>
+      <p class="section-lead reveal">
+        Chaque création est unique, pensée dans les moindres détails pour transformer
+        votre intérieur en un lieu qui vous ressemble vraiment.
+      </p>
+
+      <div class="cards-grid">
+        <article class="card reveal">
+          <div class="card-media">
+            <img src="images/cuisine/cuisine%201/image%201%20facade%20globale.jpeg" alt="Cuisines sur mesure" loading="lazy">
+            <span class="card-icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="19" cy="27" r="11"></circle>
+                <line x1="27" y1="19" x2="39" y2="9"></line>
+              </svg>
+            </span>
+          </div>
+          <div class="card-body">
+            <h3>Cuisines sur mesure</h3>
+            <p>La cuisine de vos rêves, sublimée par un savoir-faire d'exception et des finitions qui font toute la différence.</p>
+            <a href="cuisine.html" class="card-link">Découvrir <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-media">
+            <img src="images/dressing/1.jpeg" alt="Dressings sur mesure" loading="lazy">
+            <span class="card-icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="24" cy="17" r="4"></circle>
+                <line x1="24" y1="21" x2="24" y2="24"></line>
+                <path d="M11 39 L24 24 L37 39 Z"></path>
+              </svg>
+            </span>
+          </div>
+          <div class="card-body">
+            <h3>Dressings sur mesure</h3>
+            <p>Un dressing taillé pour vous, qui transforme chaque centimètre en un espace aussi pratique qu'élégant.</p>
+            <a href="dressing.html" class="card-link">Découvrir <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-media">
+            <img src="images/chambre%20a%20coucher/1.jpeg" alt="Chambres à coucher" loading="lazy">
+            <span class="card-icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="7" y="20" width="10" height="8" rx="2"></rect>
+                <rect x="6" y="27" width="36" height="10" rx="2"></rect>
+                <line x1="6" y1="20" x2="6" y2="42"></line>
+                <line x1="42" y1="32" x2="42" y2="42"></line>
+              </svg>
+            </span>
+          </div>
+          <div class="card-body">
+            <h3>Chambres à coucher</h3>
+            <p>Un cocon unique pensé pour des nuits d'exception, où chaque détail respire le confort et le raffinement.</p>
+            <a href="chambre.html" class="card-link">Découvrir <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-media">
+            <img src="images/salle%20a%20manger/salle%20a%20manger%20.jpeg" alt="Salle à manger" loading="lazy">
+            <span class="card-icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="14" width="7" height="11" rx="1.5"></rect>
+                <rect x="39" y="14" width="7" height="11" rx="1.5"></rect>
+                <rect x="6" y="21" width="36" height="4" rx="1.5"></rect>
+                <line x1="11" y1="25" x2="11" y2="38"></line>
+                <line x1="37" y1="25" x2="37" y2="38"></line>
+              </svg>
+            </span>
+          </div>
+          <div class="card-body">
+            <h3>Salle à manger</h3>
+            <p>Une table d'exception pour des instants inoubliables, entourée de meubles pensés pour réunir vos proches.</p>
+            <a href="salle-a-manger.html" class="card-link">Découvrir <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-media">
+            <img src="images/sallon/1.jpeg" alt="Salon" loading="lazy">
+            <span class="card-icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="14" width="8" height="16" rx="2"></rect>
+                <rect x="36" y="14" width="8" height="16" rx="2"></rect>
+                <rect x="6" y="22" width="36" height="12" rx="2"></rect>
+                <line x1="10" y1="34" x2="10" y2="40"></line>
+                <line x1="38" y1="34" x2="38" y2="40"></line>
+              </svg>
+            </span>
+          </div>
+          <div class="card-body">
+            <h3>Salon sur mesure</h3>
+            <p>Un salon à l'élégance intemporelle, sublimé par des meubles sur mesure pensés pour recevoir avec style.</p>
+            <a href="salon.html" class="card-link">Découvrir <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-media">
+            <img src="images/meuble%20TL/1.jpeg" alt="Meubles TV sur mesure" loading="lazy">
+            <span class="card-icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="6" y="10" width="36" height="22" rx="2"></rect>
+                <line x1="18" y1="38" x2="30" y2="38"></line>
+                <line x1="24" y1="32" x2="24" y2="38"></line>
+              </svg>
+            </span>
+          </div>
+          <div class="card-body">
+            <h3>Meubles TV sur mesure</h3>
+            <p>Un meuble TV sur mesure qui devient la pièce maîtresse de votre salon, entre design et raffinement.</p>
+            <a href="meuble-tv.html" class="card-link">Découvrir <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section showcase">
+    <div class="container">
+      <p class="section-eyebrow reveal">Un aperçu</p>
+      <h2 class="section-title reveal">Quelques-unes de nos réalisations</h2>
+      <p class="section-lead reveal">Un avant-goût de notre savoir-faire, toutes catégories confondues.</p>
+    </div>
+
+    <div class="showcase-row">
+      <div class="showcase-track">
+        <a href="cuisine.html" class="showcase-item"><img src="images/cuisine/cuisine%201/image%201%20facade%20globale.jpeg" alt="Cuisine sur mesure" loading="lazy"><span class="showcase-caption">Cuisine</span></a>
+        <a href="dressing.html" class="showcase-item"><img src="images/dressing/1.jpeg" alt="Dressing sur mesure" loading="lazy"><span class="showcase-caption">Dressing</span></a>
+        <a href="chambre.html" class="showcase-item"><img src="images/chambre%20a%20coucher/1.jpeg" alt="Chambre à coucher" loading="lazy"><span class="showcase-caption">Chambre</span></a>
+        <a href="salle-a-manger.html" class="showcase-item"><img src="images/salle%20a%20manger/salle%20a%20manger%20.jpeg" alt="Salle à manger" loading="lazy"><span class="showcase-caption">Salle à manger</span></a>
+        <a href="salon.html" class="showcase-item"><img src="images/sallon/1.jpeg" alt="Salon" loading="lazy"><span class="showcase-caption">Salon</span></a>
+        <a href="meuble-tv.html" class="showcase-item"><img src="images/meuble%20TL/1.jpeg" alt="Meuble TV" loading="lazy"><span class="showcase-caption">Meuble TV</span></a>
+        <a href="cuisine.html" class="showcase-item"><img src="images/cuisine/cuisine%201/image%201%20facade%20globale.jpeg" alt="Cuisine sur mesure" loading="lazy"><span class="showcase-caption">Cuisine</span></a>
+        <a href="dressing.html" class="showcase-item"><img src="images/dressing/1.jpeg" alt="Dressing sur mesure" loading="lazy"><span class="showcase-caption">Dressing</span></a>
+        <a href="chambre.html" class="showcase-item"><img src="images/chambre%20a%20coucher/1.jpeg" alt="Chambre à coucher" loading="lazy"><span class="showcase-caption">Chambre</span></a>
+        <a href="salle-a-manger.html" class="showcase-item"><img src="images/salle%20a%20manger/salle%20a%20manger%20.jpeg" alt="Salle à manger" loading="lazy"><span class="showcase-caption">Salle à manger</span></a>
+        <a href="salon.html" class="showcase-item"><img src="images/sallon/1.jpeg" alt="Salon" loading="lazy"><span class="showcase-caption">Salon</span></a>
+        <a href="meuble-tv.html" class="showcase-item"><img src="images/meuble%20TL/1.jpeg" alt="Meuble TV" loading="lazy"><span class="showcase-caption">Meuble TV</span></a>
+      </div>
+    </div>
+
+    <div class="showcase-row showcase-row-reverse">
+      <div class="showcase-track">
+        <a href="cuisine.html" class="showcase-item"><img src="images/cuisine/cuisine%204/1.jpeg" alt="Cuisine sur mesure" loading="lazy"><span class="showcase-caption">Cuisine</span></a>
+        <a href="dressing.html" class="showcase-item"><img src="images/dressing/4.jpeg" alt="Dressing sur mesure" loading="lazy"><span class="showcase-caption">Dressing</span></a>
+        <a href="chambre.html" class="showcase-item"><img src="images/chambre%20a%20coucher/10.jpeg" alt="Chambre à coucher" loading="lazy"><span class="showcase-caption">Chambre</span></a>
+        <a href="salle-a-manger.html" class="showcase-item"><img src="images/salle%20a%20manger/3.jpeg" alt="Salle à manger" loading="lazy"><span class="showcase-caption">Salle à manger</span></a>
+        <a href="salon.html" class="showcase-item"><img src="images/sallon/14.jpeg" alt="Salon" loading="lazy"><span class="showcase-caption">Salon</span></a>
+        <a href="meuble-tv.html" class="showcase-item"><img src="images/meuble%20TL/4.jpeg" alt="Meuble TV" loading="lazy"><span class="showcase-caption">Meuble TV</span></a>
+        <a href="cuisine.html" class="showcase-item"><img src="images/cuisine/cuisine%204/1.jpeg" alt="Cuisine sur mesure" loading="lazy"><span class="showcase-caption">Cuisine</span></a>
+        <a href="dressing.html" class="showcase-item"><img src="images/dressing/4.jpeg" alt="Dressing sur mesure" loading="lazy"><span class="showcase-caption">Dressing</span></a>
+        <a href="chambre.html" class="showcase-item"><img src="images/chambre%20a%20coucher/10.jpeg" alt="Chambre à coucher" loading="lazy"><span class="showcase-caption">Chambre</span></a>
+        <a href="salle-a-manger.html" class="showcase-item"><img src="images/salle%20a%20manger/3.jpeg" alt="Salle à manger" loading="lazy"><span class="showcase-caption">Salle à manger</span></a>
+        <a href="salon.html" class="showcase-item"><img src="images/sallon/14.jpeg" alt="Salon" loading="lazy"><span class="showcase-caption">Salon</span></a>
+        <a href="meuble-tv.html" class="showcase-item"><img src="images/meuble%20TL/4.jpeg" alt="Meuble TV" loading="lazy"><span class="showcase-caption">Meuble TV</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="atelier">
+    <div class="container atelier-grid">
+      <div class="atelier-media reveal">
+        <div class="img-placeholder" data-label="Photo de l'atelier à ajouter">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6">
+            <rect x="6" y="10" width="36" height="28" rx="2"></rect>
+            <path d="M6 30l10-10 8 8 8-8 10 10"></path>
+            <circle cx="16" cy="18" r="3"></circle>
+          </svg>
+          <span>Photo de l'atelier à ajouter</span>
+        </div>
+      </div>
+      <div class="atelier-content reveal">
+        <p class="section-eyebrow">À propos</p>
+        <h2 class="section-title reveal">Notre savoir-faire artisanal</h2>
+        <p>
+          Cuisine Dressing Dridi est un atelier spécialisé dans la fabrication de meubles sur mesure.
+          De la prise de mesures à l'installation, nous accompagnons chaque client à chaque étape de
+          son projet pour transformer ses idées en meubles durables, fonctionnels et soignés dans les
+          moindres détails.
+        </p>
+        <p>
+          Nous sélectionnons avec soin nos matériaux et travaillons en étroite collaboration avec vous
+          pour que chaque meuble réponde exactement à vos besoins et à l'esprit de votre intérieur.
+        </p>
+
+        <div class="stats">
+          <div class="stat">
+            <span class="stat-number" data-count="150" data-suffix="+">0+</span>
+            <span class="stat-label">Projets réalisés</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" data-count="10" data-suffix="+">0+</span>
+            <span class="stat-label">Années de savoir-faire</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" data-count="100" data-suffix="%">0%</span>
+            <span class="stat-label">Fabrication sur mesure</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info reveal">
+        <p class="section-eyebrow">Contact</p>
+        <h2 class="section-title reveal">Démarrons votre projet</h2>
+        <p class="section-lead">
+          Un projet de cuisine, dressing ou chambre sur mesure ? Contactez notre atelier
+          pour un devis personnalisé et gratuit.
+        </p>
+
+        <ul class="contact-list">
+          <li>
+            <span class="contact-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><rect x="16" y="6" width="16" height="36" rx="4"></rect><circle cx="24" cy="36" r="1.5" fill="currentColor"></circle></svg></span>
+            <div><strong>Téléphone</strong><a href="tel:+21654794915">54 794 915</a></div>
+          </li>
+          <li>
+            <span class="contact-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M24 6C13 6 6 13 6 22c0 4 2 8 5 11l-2 9 10-4c2 1 3 1 5 1 11 0 18-7 18-16S35 6 24 6z"></path></svg></span>
+            <div><strong>WhatsApp</strong><a href="https://wa.me/21654794915" target="_blank" rel="noopener">54 794 915</a></div>
+          </li>
+          <li>
+            <span class="contact-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M24 6c-7 0-12 5-12 12 0 9 12 24 12 24s12-15 12-24c0-7-5-12-12-12z"></path><circle cx="24" cy="18" r="4"></circle></svg></span>
+            <div><strong>Adresse</strong><a href="https://www.google.com/maps/search/?api=1&query=Rue%20Park%2C%20La%20Soukra%202036%2C%20Tunisie" target="_blank" rel="noopener">Rue Park, La Soukra 2036, Tunisie</a></div>
+          </li>
+          <li>
+            <span class="contact-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="12" width="36" height="24" rx="3"></rect><path d="M8 14l16 14 16-14"></path></svg></span>
+            <div><strong>Email</strong><a href="mailto:cuisinedressingdridi@gmail.com">cuisinedressingdridi@gmail.com</a></div>
+          </li>
+          <li>
+            <span class="contact-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><circle cx="24" cy="24" r="18"></circle><line x1="24" y1="24" x2="24" y2="13"></line><line x1="24" y1="24" x2="32" y2="29"></line></svg></span>
+            <div><strong>Horaires</strong><span>Lun – Sam : 9h00 – 18h00</span></div>
+          </li>
+        </ul>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <div class="form-row">
+          <label for="name">Nom complet</label>
+          <input type="text" id="name" name="name" placeholder="Votre nom" required>
+        </div>
+        <div class="form-row">
+          <label for="phone">Téléphone</label>
+          <input type="tel" id="phone" name="phone" placeholder="Votre numéro" required>
+        </div>
+        <div class="form-row">
+          <label for="project">Type de projet</label>
+          <select id="project" name="project">
+            <option value="cuisine">Cuisine sur mesure</option>
+            <option value="dressing">Dressing sur mesure</option>
+            <option value="chambre">Chambre à coucher</option>
+            <option value="salle-a-manger">Salle à manger</option>
+            <option value="salon">Salon</option>
+            <option value="meuble-tv">Meuble TV</option>
+            <option value="autre">Autre projet</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Décrivez votre projet..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Envoyer la demande</button>
+        <p class="form-feedback" id="formFeedback" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="#accueil" class="logo">
+        <img src="images/logo%20.jpeg" alt="Cuisine Dressing Dridi" class="logo-img">
+        <span class="logo-text">Cuisine Dressing <strong>Dridi</strong></span>
+      </a>
+      <p>Fabrication artisanale de meubles sur mesure : cuisines, dressings, chambres, salles à manger et salons.</p>
+      <div class="socials">
+        <a href="https://www.facebook.com/cuisina123" target="_blank" rel="noopener" class="social-pill">Facebook</a>
+        <a href="https://instagram.com/cuisine_dressing_dridi" target="_blank" rel="noopener" class="social-pill">Instagram</a>
+        <a href="https://wa.me/21654794915" target="_blank" rel="noopener" class="social-pill">WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#creations">Nos créations</a></li>
+        <li><a href="#atelier">À propos</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p><a href="tel:+21654794915">54 794 915</a></p>
+      <p><a href="https://www.google.com/maps/search/?api=1&query=Rue%20Park%2C%20La%20Soukra%202036%2C%20Tunisie" target="_blank" rel="noopener">Rue Park, La Soukra 2036, Tunisie</a></p>
+      <p><a href="mailto:cuisinedressingdridi@gmail.com">cuisinedressingdridi@gmail.com</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© <span id="year"></span> Cuisine Dressing Dridi. Tous droits réservés.</p>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/21654794915" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Contacter sur WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.85.5 3.58 1.43 5.06L2 22l5.25-1.38c1.42.78 3.04 1.22 4.79 1.22 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.81 14.07c-.24.68-1.38 1.32-1.9 1.39-.49.07-1.1.1-1.78-.11-.41-.13-.94-.3-1.62-.6-2.85-1.23-4.71-4.1-4.85-4.29-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.08 1-2.36.27-.28.58-.35.78-.35.2 0 .39 0 .56.01.18.01.42-.07.66.5.24.58.82 2 .9 2.14.07.14.12.31.02.5-.1.19-.15.31-.29.48-.14.17-.3.38-.43.51-.14.14-.28.29-.12.57.16.28.71 1.18 1.53 1.91 1.05.93 1.94 1.22 2.22 1.36.28.14.45.12.62-.07.17-.19.7-.81.89-1.09.19-.28.38-.23.63-.14.25.09 1.6.76 1.87.9.27.14.45.21.52.33.07.12.07.65-.17 1.33z"></path></svg>
+</a>
+
+<script src="js/search.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
