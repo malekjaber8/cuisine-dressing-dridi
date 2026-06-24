@@ -44,6 +44,7 @@ function staggerReveal(selector, step = 0.08) {
 }
 
 staggerReveal('.cards-grid .reveal');
+staggerReveal('.video-grid .reveal');
 
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {

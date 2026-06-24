@@ -64,10 +64,58 @@
           <a href="#creations" class="btn btn-primary">Voir nos réalisations</a>
           <a href="#contact" class="btn btn-outline">Demander un devis</a>
         </div>
+
+        <div class="hero-stats reveal">
+          <div class="hero-stat">
+            <span class="stat-number" data-count="150" data-suffix="+">0+</span>
+            <span class="stat-label">Projets réalisés</span>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <span class="stat-number" data-count="10" data-suffix="+">0+</span>
+            <span class="stat-label">Ans d'expérience</span>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <span class="stat-number" data-count="100" data-suffix="%">0%</span>
+            <span class="stat-label">Sur mesure</span>
+          </div>
+        </div>
       </div>
       <div class="hero-logo-col reveal">
-        <div class="hero-logo-badge">
-          <img src="images/logo%20.jpeg" alt="Cuisine Dressing Dridi">
+        <div class="hero-collage">
+          <div class="collage-photo collage-photo-1">
+            <img src="images/sallon/14.jpeg" alt="Salon sur mesure" loading="lazy">
+          </div>
+          <div class="collage-photo collage-photo-2">
+            <img src="images/chambre%20a%20coucher/10.jpeg" alt="Chambre sur mesure" loading="lazy">
+          </div>
+          <div class="hero-logo-badge">
+            <img src="images/logo%20.jpeg" alt="Cuisine Dressing Dridi">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section video-section-top">
+    <div class="container">
+      <p class="section-eyebrow reveal">En mouvement</p>
+      <h2 class="section-title reveal">Découvrez-nous en vidéo</h2>
+      <p class="section-lead reveal">
+        Quelques séquences de notre atelier et de nos réalisations.
+      </p>
+
+      <div class="video-grid">
+        <div class="video-card reveal">
+          <video autoplay muted loop playsinline poster="images/cuisine/cuisine%204/1.jpeg">
+            <source src="vidio/vidio%201%20.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="video-card reveal">
+          <video autoplay muted loop playsinline poster="images/sallon/14.jpeg">
+            <source src="vidio/vidio%202.mp4" type="video/mp4">
+          </video>
         </div>
       </div>
     </div>
@@ -240,16 +288,44 @@
     </div>
   </section>
 
+  <section class="section">
+    <div class="container">
+      <p class="section-eyebrow reveal">En mouvement</p>
+      <h2 class="section-title reveal">Notre savoir-faire en vidéo</h2>
+      <p class="section-lead reveal">
+        Quelques séquences de nos réalisations, en image.
+      </p>
+
+      <div class="video-grid">
+        <div class="video-card reveal">
+          <video autoplay muted loop playsinline poster="images/dressing/4.jpeg">
+            <source src="vidio/vidio%203.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="video-card reveal">
+          <video autoplay muted loop playsinline poster="images/chambre%20a%20coucher/10.jpeg">
+            <source src="vidio/vidio%204.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="section section-alt" id="atelier">
     <div class="container atelier-grid">
       <div class="atelier-media reveal">
-        <div class="img-placeholder" data-label="Photo de l'atelier à ajouter">
-          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6">
-            <rect x="6" y="10" width="36" height="28" rx="2"></rect>
-            <path d="M6 30l10-10 8 8 8-8 10 10"></path>
-            <circle cx="16" cy="18" r="3"></circle>
-          </svg>
-          <span>Photo de l'atelier à ajouter</span>
+        <div class="atelier-photo-mosaic">
+          <div class="mosaic-main">
+            <img src="images/image%20de%20atelier/image%20principale%20de%20atelier%20.jpeg" alt="L'atelier Cuisine Dressing Dridi" loading="lazy">
+          </div>
+          <div class="mosaic-side">
+            <div class="mosaic-cell">
+              <img src="images/image%20de%20atelier/image%202.jpeg" alt="Notre atelier" loading="lazy">
+            </div>
+            <div class="mosaic-cell">
+              <img src="images/image%20de%20atelier/image%203.jpeg" alt="Notre atelier" loading="lazy">
+            </div>
+          </div>
         </div>
       </div>
       <div class="atelier-content reveal">
@@ -343,7 +419,10 @@
           <label for="message">Message</label>
           <textarea id="message" name="message" rows="4" placeholder="Décrivez votre projet..." required></textarea>
         </div>
-        <button type="submit" class="btn btn-primary btn-block">Envoyer la demande</button>
+        <button type="submit" class="btn btn-primary btn-block">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+          Envoyer la demande
+        </button>
         <p class="form-feedback" id="formFeedback" role="status"></p>
       </form>
     </div>
@@ -390,9 +469,17 @@
   </div>
 </footer>
 
-<a href="https://wa.me/21654794915" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Contacter sur WhatsApp">
-  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.85.5 3.58 1.43 5.06L2 22l5.25-1.38c1.42.78 3.04 1.22 4.79 1.22 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.81 14.07c-.24.68-1.38 1.32-1.9 1.39-.49.07-1.1.1-1.78-.11-.41-.13-.94-.3-1.62-.6-2.85-1.23-4.71-4.1-4.85-4.29-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.08 1-2.36.27-.28.58-.35.78-.35.2 0 .39 0 .56.01.18.01.42-.07.66.5.24.58.82 2 .9 2.14.07.14.12.31.02.5-.1.19-.15.31-.29.48-.14.17-.3.38-.43.51-.14.14-.28.29-.12.57.16.28.71 1.18 1.53 1.91 1.05.93 1.94 1.22 2.22 1.36.28.14.45.12.62-.07.17-.19.7-.81.89-1.09.19-.28.38-.23.63-.14.25.09 1.6.76 1.87.9.27.14.45.21.52.33.07.12.07.65-.17 1.33z"></path></svg>
-</a>
+<div class="social-float">
+  <a href="https://instagram.com/cuisine_dressing_dridi" target="_blank" rel="noopener" class="social-float-btn instagram-float" aria-label="Suivez-nous sur Instagram">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle></svg>
+  </a>
+  <a href="https://www.facebook.com/cuisina123" target="_blank" rel="noopener" class="social-float-btn facebook-float" aria-label="Suivez-nous sur Facebook">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.06C22 6.5 17.5 2 12 2S2 6.5 2 12.06c0 5 3.66 9.13 8.44 9.88v-7H7.9v-2.88h2.54V9.84c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.23.2 2.23.2v2.45h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.88h-2.34v7A10 10 0 0 0 22 12.06Z"></path></svg>
+  </a>
+  <a href="https://wa.me/21654794915" target="_blank" rel="noopener" class="social-float-btn whatsapp-float" aria-label="Contacter sur WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.85.5 3.58 1.43 5.06L2 22l5.25-1.38c1.42.78 3.04 1.22 4.79 1.22 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.81 14.07c-.24.68-1.38 1.32-1.9 1.39-.49.07-1.1.1-1.78-.11-.41-.13-.94-.3-1.62-.6-2.85-1.23-4.71-4.1-4.85-4.29-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.08 1-2.36.27-.28.58-.35.78-.35.2 0 .39 0 .56.01.18.01.42-.07.66.5.24.58.82 2 .9 2.14.07.14.12.31.02.5-.1.19-.15.31-.29.48-.14.17-.3.38-.43.51-.14.14-.28.29-.12.57.16.28.71 1.18 1.53 1.91 1.05.93 1.94 1.22 2.22 1.36.28.14.45.12.62-.07.17-.19.7-.81.89-1.09.19-.28.38-.23.63-.14.25.09 1.6.76 1.87.9.27.14.45.21.52.33.07.12.07.65-.17 1.33z"></path></svg>
+  </a>
+</div>
 
 <script src="js/search.js"></script>
 <script src="js/main.js"></script>

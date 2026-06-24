@@ -81,6 +81,12 @@ button {
   white-space: nowrap;
 }
 
+.btn svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
 .btn-primary {
   background: linear-gradient(110deg, var(--color-gold-dark), var(--color-gold) 45%, #e6c659 55%, var(--color-gold-dark));
   background-size: 220% 100%;
@@ -346,7 +352,8 @@ button {
 /* Hero */
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: min(100vh, 760px);
+  padding-bottom: 50px;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -423,13 +430,82 @@ button {
   flex-wrap: wrap;
 }
 
+.hero-stats {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 44px;
+  flex-wrap: wrap;
+}
+
+.hero-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-stat .stat-number {
+  font-size: 1.6rem;
+}
+
+.hero-stat .stat-label {
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.hero-stat-divider {
+  width: 1px;
+  height: 32px;
+  background: var(--color-border);
+}
+
 .hero-logo-col {
   display: flex;
   justify-content: center;
 }
 
+.hero-collage {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.collage-photo {
+  position: absolute;
+  z-index: 1;
+  border-radius: 14px;
+  border: 6px solid var(--color-white);
+  box-shadow: 0 16px 32px rgba(21, 18, 14, 0.25);
+  overflow: hidden;
+  animation: float 7s ease-in-out infinite;
+}
+
+.collage-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.collage-photo-1 {
+  width: 130px;
+  height: 110px;
+  top: -30px;
+  left: -46px;
+  transform: rotate(-8deg);
+}
+
+.collage-photo-2 {
+  width: 140px;
+  height: 120px;
+  bottom: -26px;
+  right: -50px;
+  transform: rotate(7deg);
+  animation-delay: -3.5s;
+}
+
 .hero-logo-badge {
   position: relative;
+  z-index: 2;
   width: 300px;
   height: 300px;
   animation: float 6s ease-in-out infinite;
@@ -795,6 +871,37 @@ button {
   font-size: 0.9rem;
 }
 
+/* Vidéos de réalisations */
+.video-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.video-card {
+  position: relative;
+  width: min(100%, 380px);
+  aspect-ratio: 9 / 16;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  background: var(--color-dark);
+  transition: var(--transition);
+}
+
+.video-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow);
+}
+
+.video-card video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 /* Atelier / About */
 .atelier-grid {
   display: grid;
@@ -860,6 +967,40 @@ button {
 
 .atelier-media .img-placeholder {
   min-height: 380px;
+}
+
+.atelier-photo-mosaic {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 6px;
+  min-height: 380px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.mosaic-side {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 6px;
+}
+
+.mosaic-main,
+.mosaic-cell {
+  overflow: hidden;
+}
+
+.mosaic-main img,
+.mosaic-cell img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.atelier-photo-mosaic:hover img {
+  transform: scale(1.05);
 }
 
 /* Gallery */
@@ -973,33 +1114,60 @@ button {
   white-space: nowrap;
 }
 
-/* WhatsApp floating button */
-.whatsapp-float {
+/* Boutons flottants réseaux sociaux */
+.social-float {
   position: fixed;
   bottom: 26px;
   right: 26px;
-  width: 58px;
-  height: 58px;
+  z-index: 900;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.social-float-btn {
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  background: #25d366;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0 10px 24px rgba(21, 18, 14, 0.3);
-  z-index: 900;
   animation: float-wa 3s ease-in-out infinite;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-float-btn svg {
+  width: 24px;
+  height: 24px;
+}
+
+.social-float-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 14px 30px rgba(21, 18, 14, 0.35);
+}
+
+.instagram-float {
+  background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
+  animation-delay: -2s;
+}
+
+.facebook-float {
+  background: #1877f2;
+  animation-delay: -1s;
+}
+
+.whatsapp-float {
+  width: 58px;
+  height: 58px;
+  background: #25d366;
 }
 
 .whatsapp-float svg {
   width: 30px;
   height: 30px;
-}
-
-.whatsapp-float:hover {
-  transform: scale(1.08);
-  box-shadow: 0 14px 30px rgba(21, 18, 14, 0.35);
 }
 
 @keyframes float-wa {
@@ -1169,33 +1337,55 @@ button {
 
 /* Contact */
 .contact-grid {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 70px;
+}
+
+.contact-grid::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(201, 162, 39, 0.16), transparent 70%);
+  z-index: 0;
 }
 
 .contact-list {
   margin-top: 30px;
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 8px;
 }
 
 .contact-list li {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 16px;
+  padding: 12px;
+  border-radius: var(--radius);
+  transition: var(--transition);
+}
+
+.contact-list li:hover {
+  background: var(--color-white);
+  box-shadow: var(--shadow-sm);
+  transform: translateX(4px);
 }
 
 .contact-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
-  background: var(--color-white);
-  color: var(--color-gold);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(201, 162, 39, 0.22), rgba(201, 162, 39, 0.06));
+  color: var(--color-gold-dark);
   flex-shrink: 0;
 }
 
@@ -1224,11 +1414,24 @@ button {
 }
 
 .contact-form {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
   background: var(--color-white);
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
-  padding: 40px;
-  box-shadow: var(--shadow-sm);
+  padding: 44px 40px 40px;
+  box-shadow: var(--shadow);
+}
+
+.contact-form::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, var(--color-gold-dark), var(--color-gold), #e6c659, var(--color-gold-dark));
 }
 
 .form-row {
@@ -1246,9 +1449,9 @@ button {
 .form-row select,
 .form-row textarea {
   width: 100%;
-  padding: 12px 14px;
+  padding: 13px 16px;
   border: 1.5px solid var(--color-border);
-  border-radius: 8px;
+  border-radius: 10px;
   font-family: inherit;
   font-size: 0.95rem;
   background: var(--color-bg);
@@ -1257,11 +1460,22 @@ button {
   resize: vertical;
 }
 
+.form-row select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236f655a' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  background-size: 16px;
+  padding-right: 42px;
+  cursor: pointer;
+}
+
 .form-row input:focus,
 .form-row select:focus,
 .form-row textarea:focus {
   outline: none;
   border-color: var(--color-gold);
+  box-shadow: 0 0 0 4px rgba(201, 162, 39, 0.15);
 }
 
 .form-feedback {
@@ -1392,6 +1606,25 @@ button {
     order: -1;
   }
 
+  .hero-collage {
+    width: 220px;
+    height: 220px;
+  }
+
+  .collage-photo-1 {
+    width: 95px;
+    height: 80px;
+    top: -20px;
+    left: -30px;
+  }
+
+  .collage-photo-2 {
+    width: 100px;
+    height: 88px;
+    bottom: -18px;
+    right: -32px;
+  }
+
   .hero-logo-badge {
     width: 220px;
     height: 220px;
@@ -1406,10 +1639,18 @@ button {
     justify-content: center;
   }
 
+  .hero-stats {
+    justify-content: center;
+  }
+
   .atelier-grid,
   .contact-grid {
     grid-template-columns: 1fr;
     gap: 50px;
+  }
+
+  .atelier-photo-mosaic {
+    min-height: 280px;
   }
 
   .gallery-grid,
@@ -1428,6 +1669,10 @@ button {
 
 @media (max-width: 760px) {
   .btn-nav {
+    display: none;
+  }
+
+  .contact-grid::before {
     display: none;
   }
 
@@ -1542,11 +1787,25 @@ button {
     right: 16px;
   }
 
+  .social-float {
+    bottom: 18px;
+    right: 18px;
+    gap: 10px;
+  }
+
+  .social-float-btn {
+    width: 44px;
+    height: 44px;
+  }
+
+  .social-float-btn svg {
+    width: 20px;
+    height: 20px;
+  }
+
   .whatsapp-float {
     width: 50px;
     height: 50px;
-    bottom: 18px;
-    right: 18px;
   }
 
   .whatsapp-float svg {

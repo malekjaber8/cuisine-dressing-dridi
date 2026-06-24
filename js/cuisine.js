@@ -82,6 +82,16 @@ const KITCHEN_PROJECTS = [
       'images/cuisine/cuisine 8/4.jpeg',
       'images/cuisine/cuisine 8/5.jpeg'
     ]
+  },
+  {
+    title: 'Cuisine 9',
+    images: [
+      'images/cuisine/cuisine 9/1.jpeg',
+      'images/cuisine/cuisine 9/2.jpeg',
+      'images/cuisine/cuisine 9/3.jpeg',
+      'images/cuisine/cuisine 9/4.jpeg',
+      'images/cuisine/cuisine 9/5.jpeg'
+    ]
   }
 ];
 
