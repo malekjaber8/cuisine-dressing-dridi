@@ -85,9 +85,47 @@ document.querySelectorAll('.stat-number').forEach(el => statObserver.observe(el)
 
 const contactForm = document.getElementById('contactForm');
 const formFeedback = document.getElementById('formFeedback');
+const submitButton = contactForm.querySelector('button[type="submit"]');
+const WEB3FORMS_ACCESS_KEY = '2fa70b71-0fa7-48c0-a8c7-00e357cc4753';
 
-contactForm.addEventListener('submit', (e) => {
+contactForm.addEventListener('submit', async (e) => {
   e.preventDefault();
-  formFeedback.textContent = 'Merci ! Votre demande a été envoyée. Nous vous recontacterons rapidement.';
-  contactForm.reset();
+
+  const name = contactForm.elements.name.value;
+  const phone = contactForm.elements.phone.value;
+  const projectSelect = contactForm.elements.project;
+  const project = projectSelect.options[projectSelect.selectedIndex].text;
+  const message = contactForm.elements.message.value;
+
+  submitButton.disabled = true;
+  formFeedback.textContent = 'Envoi en cours...';
+
+  try {
+    const response = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+      body: JSON.stringify({
+        access_key: WEB3FORMS_ACCESS_KEY,
+        subject: `Nouvelle demande de devis — ${project}`,
+        from_name: name,
+        name,
+        phone,
+        'Type de projet': project,
+        message
+      })
+    });
+
+    const result = await response.json();
+
+    if (result.success) {
+      formFeedback.textContent = 'Merci ! Votre demande a été envoyée. Nous vous recontacterons rapidement.';
+      contactForm.reset();
+    } else {
+      formFeedback.textContent = 'Une erreur est survenue. Merci de réessayer ou de nous contacter par téléphone/WhatsApp.';
+    }
+  } catch {
+    formFeedback.textContent = 'Une erreur est survenue. Merci de réessayer ou de nous contacter par téléphone/WhatsApp.';
+  } finally {
+    submitButton.disabled = false;
+  }
 });

@@ -1579,6 +1579,12 @@ button {
   text-align: center;
 }
 
+.footer-credit {
+  margin-top: 6px;
+  font-size: 0.78rem;
+  opacity: 0.75;
+}
+
 /* Reveal animation */
 .reveal {
   opacity: 0;
