@@ -92,6 +92,34 @@ const KITCHEN_PROJECTS = [
       'images/cuisine/cuisine 9/4.jpeg',
       'images/cuisine/cuisine 9/5.jpeg'
     ]
+  },
+  {
+    title: 'Cuisine 10',
+    images: [
+      'images/cuisine/cuisine 10/1.jpeg',
+      'images/cuisine/cuisine 10/2.jpeg',
+      'images/cuisine/cuisine 10/3.jpeg',
+      'images/cuisine/cuisine 10/4.jpeg'
+    ]
+  },
+  {
+    title: 'Cuisine 11',
+    images: [
+      'images/cuisine/cuisine 11/1.jpeg',
+      'images/cuisine/cuisine 11/2.jpeg',
+      'images/cuisine/cuisine 11/3.jpeg'
+    ]
+  },
+  {
+    title: 'Cuisine 12',
+    images: [
+      'images/cuisine/cuisine 12/1.jpeg',
+      'images/cuisine/cuisine 12/2.jpeg',
+      'images/cuisine/cuisine 12/3.jpeg',
+      'images/cuisine/cuisine 12/4.jpeg',
+      'images/cuisine/cuisine 12/5.jpeg',
+      'images/cuisine/cuisine 12/6.jpeg'
+    ]
   }
 ];
 

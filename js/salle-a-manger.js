@@ -12,7 +12,18 @@ const DINING_IMAGES = [
   'images/salle a manger/11.jpeg',
   'images/salle a manger/12.jpeg',
   'images/salle a manger/13.jpeg',
-  'images/salle a manger/14.jpeg'
+  'images/salle a manger/14.jpeg',
+  'images/salle a manger/15.jpeg',
+  'images/salle a manger/16.jpeg',
+  'images/salle a manger/17.jpeg',
+  'images/salle a manger/18.jpeg',
+  'images/salle a manger/19.jpeg',
+  'images/salle a manger/20.jpeg',
+  'images/salle a manger/21.jpeg',
+  'images/salle a manger/22.jpeg',
+  'images/salle a manger/23.jpeg',
+  'images/salle a manger/24.jpeg',
+  'images/salle a manger/25.jpeg'
 ];
 
 document.getElementById('year').textContent = new Date().getFullYear();
