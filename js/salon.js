@@ -42,7 +42,32 @@ const SALON_PROJECTS = [
   },
   { title: 'Salon', images: ['images/sallon/21.jpeg'] },
   { title: 'Salon', images: ['images/sallon/22.jpeg'] },
-  { title: 'Salon', images: ['images/sallon/23.jpeg'] }
+  { title: 'Salon', images: ['images/sallon/23.jpeg'] },
+  { title: 'Salon', images: ['images/sallon/24.jpeg'] },
+  { title: 'Salon', images: ['images/sallon/25.jpeg'] },
+  { title: 'Salon', images: ['images/sallon/26.jpeg'] },
+  {
+    title: 'Salon',
+    images: [
+      'images/sallon/27 image 1.jpeg',
+      'images/sallon/27 image 2.jpeg'
+    ]
+  },
+  {
+    title: 'Salon',
+    images: [
+      'images/sallon/28 image 1.jpeg',
+      'images/sallon/28 image 2.jpeg'
+    ]
+  },
+  { title: 'Salon', images: ['images/sallon/29.jpeg'] },
+  { title: 'Salon', images: ['images/sallon/30.jpeg'] },
+  { title: 'Salon', images: ['images/sallon/31.jpeg'] },
+  { title: 'Salon', images: ['images/sallon/32.jpeg'] },
+  { title: 'Salon', images: ['images/sallon/33.jpeg'] },
+  { title: 'Salon', images: ['images/sallon/34.jpeg'] },
+  { title: 'Salon', images: ['images/sallon/35.jpeg'] },
+  { title: 'Salon', images: ['images/sallon/36.jpeg'] }
 ];
 
 document.getElementById('year').textContent = new Date().getFullYear();
