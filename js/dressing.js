@@ -26,7 +26,11 @@ const DRESSING_PROJECTS = [
       'images/dressing/5.jpeg',
       'images/dressing/5 image 2.jpeg'
     ]
-  }
+  },
+  { title: 'Dressing', images: ['images/dressing/6.jpeg'] },
+  { title: 'Dressing', images: ['images/dressing/7.jpeg'] },
+  { title: 'Dressing', images: ['images/dressing/8.jpeg'] },
+  { title: 'Dressing', images: ['images/dressing/9.jpeg'] }
 ];
 
 document.getElementById('year').textContent = new Date().getFullYear();

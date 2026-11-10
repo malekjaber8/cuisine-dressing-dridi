@@ -17,7 +17,27 @@ const CHAMBRE_PROJECTS = [
   { title: 'Chambre', images: ['images/chambre a coucher/16.jpeg'] },
   { title: 'Chambre', images: ['images/chambre a coucher/17.jpeg'] },
   { title: 'Chambre', images: ['images/chambre a coucher/18.jpeg'] },
-  { title: 'Chambre', images: ['images/chambre a coucher/19.jpeg'] }
+  { title: 'Chambre', images: ['images/chambre a coucher/19.jpeg'] },
+  { title: 'Chambre', images: ['images/chambre a coucher/20.jpeg'] },
+  { title: 'Chambre', images: ['images/chambre a coucher/21.jpeg'] },
+  { title: 'Chambre', images: ['images/chambre a coucher/22.jpeg'] },
+  { title: 'Chambre', images: ['images/chambre a coucher/23.jpeg'] },
+  { title: 'Chambre', images: ['images/chambre a coucher/24.jpeg'] },
+  { title: 'Chambre', images: ['images/chambre a coucher/25.jpeg'] },
+  { title: 'Chambre', images: ['images/chambre a coucher/26.jpeg'] },
+  { title: 'Chambre', images: ['images/chambre a coucher/27_1.jpeg', 'images/chambre a coucher/27_2.jpeg'] },
+  { title: 'Chambre', images: ['images/chambre a coucher/28_1.jpeg', 'images/chambre a coucher/28_2.jpeg'] },
+  { title: 'Chambre', images: ['images/chambre a coucher/29_1.jpeg', 'images/chambre a coucher/29_2.jpeg'] },
+  { title: 'Chambre', images: ['images/chambre a coucher/30.jpeg'] },
+  { title: 'Chambre', images: ['images/chambre a coucher/31.jpeg'] },
+  { title: 'Chambre', images: ['images/chambre a coucher/32.jpeg'] },
+  { title: 'Chambre', images: ['images/chambre a coucher/33.jpeg'] },
+  { title: 'Chambre', images: ['images/chambre a coucher/34.jpeg'] },
+  { title: 'Chambre', images: ['images/chambre a coucher/35.jpeg'] },
+  { title: 'Chambre', images: ['images/chambre a coucher/36.jpeg'] },
+  { title: 'Chambre', images: ['images/chambre a coucher/37.jpeg'] },
+  { title: 'Chambre', images: ['images/chambre a coucher/38.jpeg'] },
+  { title: 'Chambre', images: ['images/chambre a coucher/39.jpeg'] }
 ];
 
 document.getElementById('year').textContent = new Date().getFullYear();

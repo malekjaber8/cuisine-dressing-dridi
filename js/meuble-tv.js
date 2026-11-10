@@ -6,7 +6,8 @@ const MEUBLE_TV_PROJECTS = [
   { title: 'Meuble TV', images: ['images/meuble TL/5.jpeg'] },
   { title: 'Meuble TV', images: ['images/meuble TL/6.jpeg'] },
   { title: 'Meuble TV', images: ['images/meuble TL/7.jpeg'] },
-  { title: 'Meuble TV', images: ['images/meuble TL/8.jpeg'] }
+  { title: 'Meuble TV', images: ['images/meuble TL/8.jpeg'] },
+  { title: 'Meuble TV', images: ['images/meuble TL/9.jpeg'] }
 ];
 
 document.getElementById('year').textContent = new Date().getFullYear();
